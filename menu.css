@@ -1,0 +1,33 @@
+
+.menu-section h2 {
+  font-size: 18px;
+  margin-top: 32px;
+  margin-bottom: 10px;
+  color: #6b584c;
+  border-left: 6px solid #e8e0d0;
+  padding-left: 10px;
+  padding: 6px 10px;
+}
+
+.menu-section p {
+  font-size: 15px;
+  margin: 0 0 24px 0;
+  padding-left: 14px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* --- メニューごとに区切る線--- */
+.menu-section p::after {
+  content: "";
+  display: block;
+  margin: 20px 0;
+  height: 1px;
+  background-color: #eee;
+}
+
+/* --- 長文対策--- */
+.menu-section {
+  word-break: keep-all;
+}
+

@@ -1,0 +1,157 @@
+
+body {
+  margin: 0;
+    font-family: "Poiret One", "Noto Sans JP", sans-serif;
+  background-color: #cdcfc0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  padding: 40px 5%;
+  position: relative;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-section {
+  flex: 1 1 50%;
+  text-align: center;
+}
+
+.left-section h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.star {
+  font-size: 60px;
+  color: #ffd700;
+  margin: 20px 0;
+}
+
+.left-section img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.right-section {
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+
+}
+
+.menu li {
+  margin: 28px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #ffffff;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  color: #ffd700;
+  border-color: #ffd700;
+}
+
+.flower {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 190px;
+  height: auto;
+  opacity: 0.7;
+  z-index: 10;
+  transform: rotate(-5deg);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+
+  .left-section img {
+    max-width: 90%;
+  }
+
+  .menu a {
+    font-size: 18px;
+  }
+
+  .flower {
+    width: 50px;
+  }
+}
+
+.sub-page {
+  padding: 40px;
+  font-size: 18px;
+  background-color: #c6c2a6;
+  min-height: 100vh;
+}
+
+.sub-page h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.sub-page a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 30px;
+}
+.sns-icons {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.sns-icons a {
+  color: #ffffff;
+  font-size: 28px;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.sns-icons a:hover {
+  color: #ffd700;
+}
+
+footer {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+

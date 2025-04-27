@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: 'Yu Gothic', sans-serif;
+  /* background: #f9f8f4 url('flower-background.png') repeat; */
+  color: #333;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+  height: 60px; 
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #6b584c;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #6b584c;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.nav a:hover {
+  background-color: #e8e0d0;
+}
+
+.reserve-btn {
+  background-color: #ffd700;
+  color: #ffffff;
+}
+
+.reserve-btn:hover {
+  background-color: #e8e0d0;
+}
+
+.sub-page {
+  padding-top: 50px;
+}
+
+.sub-page h1 {
+  text-align: center;
+  font-size: 2.2em;
+  color: #333;
+  margin-top: 60px; 
+  margin-bottom: 20px;
+}
+
+.sub-page p {
+  text-align: center;
+  font-size: 1em;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 60px;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+  padding: 40px 0 20px;
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  .logo {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+  }
+
+  .nav a {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .reserve-btn {
+    align-self: flex-start;
+  }
+
+  .sub-page {
+    padding: 100px 15px 40px;
+  }
+
+  .sub-page h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .menu-section h2 {
+    font-size: 16px;
+  }
+
+  .menu-section p {
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 11px;
+    padding: 30px 0 20px;
+  }
+}
