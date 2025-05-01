@@ -25,5 +25,91 @@
   margin-bottom: 65px;
 }
 
+/* @media (max-width: 767px) {
+  .sub-page {
+    padding: 20px;
+    font-size: 16px;
+  }
 
+  .sub-page h1 {
+    font-size: 26px;
+  }
+} */
 
+.description {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.line {
+  padding-top: 30px;
+}
+
+.item p {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  /* text-align: left; */
+}
+
+.item {
+  margin-top: 30px;
+  margin-bottom: 65px;
+}
+
+/* @media (max-width: 767px) {
+  .sub-page {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .sub-page h1 {
+    font-size: 26px;
+  }
+} */
+
+@media (max-width: 767px) {
+
+  /* 具体的なセレクタ、または影響を受けていないセレクタのみ残す */
+  .sub-page {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .sub-page h1 {
+    font-size: 26px;
+  }
+
+  .sub-page .description p {  /* 具体的なセレクタ */
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+  }
+
+  .description .item p { /* 具体的なセレクタ */
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    width: 90%;
+  }
+
+  .sub-page .line { /* 具体的なセレクタ */
+      margin-top: 30px;
+      text-align: center;
+  }
+  .sub-page .line img { /* 具体的なセレクタ */
+      width: 200px;
+      height: auto;
+  }
+
+  /* ここから下にあった具体性の低いルールは削除されている状態 */
+
+}

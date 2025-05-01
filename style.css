@@ -85,29 +85,7 @@ body {
   transform: rotate(-5deg);
 }
 
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    gap: 20px;
-  }
 
-  .left-section,
-  .right-section {
-    width: 100%;
-  }
-
-  .left-section img {
-    max-width: 90%;
-  }
-
-  .menu a {
-    font-size: 18px;
-  }
-
-  .flower {
-    width: 50px;
-  }
-}
 
 .sub-page {
   padding: 40px;
@@ -154,4 +132,172 @@ footer {
   opacity: 0.7;
 }
 
+/* 基本的なスタイル（既存のコードをここに記述） */
+body {
+  margin: 0;
+    font-family: "Poiret One", "Noto Sans JP", sans-serif;
+  background-color: #cdcfc0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* 折り返しを許可 */
+  min-height: 100vh;
+  padding: 40px 5%;
+  position: relative;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-section {
+  flex: 1 1 50%; /* 基本は幅50% */
+  text-align: center;
+}
+
+.left-section h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.star {
+  font-size: 60px;
+  color: #ffd700;
+  margin: 20px 0;
+}
+
+.left-section img {
+  width: 100%;
+  max-width: 500px; /* 最大幅を設定 */
+  height: auto; /* 高さを自動調整 */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  display: block; /* 中央揃えのため */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.right-section {
+  flex: 1 1 30%; /* 基本は幅30% */
+  display: flex; /* 中央揃えのため */
+  flex-direction: column; /* 中身を縦並びに */
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* テキストも中央揃えに */
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0; /* 下に少しマージンを追加 */
+  width: 100%; /* 幅いっぱいを使う */
+}
+
+.menu li {
+  margin: 28px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #ffffff;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  color: #ffd700;
+  border-color: #ffd700;
+}
+
+.flower {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 190px;
+  height: auto;
+  opacity: 0.7;
+  z-index: -1; /* 他の要素の後ろになるように調整（必要に応じて） */
+  transform: rotate(-5deg);
+}
+
+.sub-page {
+  padding: 40px;
+  font-size: 18px;
+  background-color: #c6c2a6;
+  min-height: 100vh;
+}
+
+.sub-page h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.sub-page a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 30px;
+}
+.sns-icons {
+  margin-top: 20px; /* メニューとの間隔調整 */
+  text-align: center;
+}
+
+.sns-icons a {
+  color: #ffffff;
+  font-size: 28px;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+  border-bottom: none; /* メニューのaタグとは違うので線を消す */
+  text-decoration: none;
+}
+
+.sns-icons a:hover {
+  color: #ffd700;
+}
+
+footer {
+  margin-top: 30px; /* SNSアイコンとの間隔調整 */
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.7;
+  width: 100%; /* 幅いっぱいを使う */
+}
+
+/* ========== レスポンシブ対応 ========== */
+@media (max-width: 768px) { /* 画面幅が768px以下の場合に適用 */
+
+  .container {
+    flex-direction: column; /* 要素を縦積みに変更 */
+    padding: 30px 5%; /* 上下のパディングを少し減らす */
+    gap: 20px; /* 要素間のギャップを狭める */
+    align-items: center; /* 要素を中央揃え */
+  }
+
+  .left-section,
+  .right-section {
+    flex-basis: 100%; /* 各セクションの幅を100%にする */
+    flex-grow: 0; /* 余計な伸びをなくす */
+    max-width: 100%; /* 最大幅も100%に */
+    margin-bottom: 20px; /* 各セクション間のマージン */
+  }
+
+  .left-section {
+      order: 1; /* 左セクションを先に表示 */
+      margin-bottom: 0; /* 画像とメニュー間のマージンは right-section で調整 */
+  }
+
+  .right-section {
+      order: 2; /* 右セクションを後に表示 */
+      /* left-sectionの画像の下に来るように特別な指定は不要 */
+      /* .container の flex-direction: column により自然に下に配置される */
+      width: 100%; /* 幅を確実に100%に */
+  }
+
+  .left
 

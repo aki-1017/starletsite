@@ -3,6 +3,7 @@ body {
   font-family: 'Yu Gothic', sans-serif;
   /* background: #f9f8f4 url('flower-background.png') repeat; */
   color: #333;
+  background-color: #cdcfc0;
 }
 
 .header {
@@ -41,6 +42,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   color: #6b584c;
+  font-family: "Poiret One", "Noto Sans JP", sans-serif;
 }
 
 .nav ul {
@@ -110,45 +112,46 @@ footer {
   .header {
     flex-direction: column;
     align-items: flex-start;
+    height: auto;
     padding: 10px 15px;
   }
 
   .logo {
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   .nav ul {
     flex-direction: column;
+    width: 100%;
     gap: 8px;
-    padding: 0;
   }
 
   .nav a {
-    display: inline-block;
-    padding: 6px 12px;
+    display: block;
+    padding: 10px;
     font-size: 14px;
+    text-align: center;
   }
 
   .reserve-btn {
     align-self: flex-start;
+    width: 100%;
+    text-align: center;
+  }
+
+  .page-container {
+    padding: 10px;
   }
 
   .sub-page {
-    padding: 100px 15px 40px;
+    padding-top: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .sub-page h1 {
     font-size: 26px;
-    text-align: center;
-  }
-
-  .menu-section h2 {
-    font-size: 16px;
-  }
-
-  .menu-section p {
-    font-size: 14px;
   }
 
   footer {
