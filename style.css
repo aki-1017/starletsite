@@ -1,303 +1,192 @@
-
-body {
-  margin: 0;
+/* ==============================
+   基本スタイル (PC / デフォルト)
+   ============================== */
+   body {
+    margin: 0;
     font-family: "Poiret One", "Noto Sans JP", sans-serif;
-  background-color: #cdcfc0;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  min-height: 100vh;
-  padding: 40px 5%;
-  position: relative;
-  gap: 40px;
-  justify-content: center;
-  align-items: center;
-}
-
-.left-section {
-  flex: 1 1 50%;
-  text-align: center;
-}
-
-.left-section h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-  font-weight: 500;
-}
-
-.star {
-  font-size: 60px;
-  color: #ffd700;
-  margin: 20px 0;
-}
-
-.left-section img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.right-section {
-  flex: 1 1 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  width: 100%;
-
-}
-
-.menu li {
-  margin: 28px 0;
-}
-
-.menu a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 20px;
-  padding-bottom: 6px;
-  border-bottom: 1px solid #ffffff;
-  transition: all 0.3s ease;
-}
-
-.menu a:hover {
-  color: #ffd700;
-  border-color: #ffd700;
-}
-
-.flower {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  width: 190px;
-  height: auto;
-  opacity: 0.7;
-  z-index: 10;
-  transform: rotate(-5deg);
-}
-
-
-
-.sub-page {
-  padding: 40px;
-  font-size: 18px;
-  background-color: #c6c2a6;
-  min-height: 100vh;
-}
-
-.sub-page h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.sub-page a {
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-  margin-top: 30px;
-}
-.sns-icons {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.sns-icons a {
-  color: #ffffff;
-  font-size: 28px;
-  margin: 0 15px;
-  transition: color 0.3s ease;
-  border-bottom: none;
-  text-decoration: none;
-}
-
-.sns-icons a:hover {
-  color: #ffd700;
-}
-
-footer {
-  margin-top: 60px;
-  text-align: center;
-  font-size: 14px;
-  color: #ffffff;
-  opacity: 0.7;
-}
-
-/* 基本的なスタイル（既存のコードをここに記述） */
-body {
-  margin: 0;
-    font-family: "Poiret One", "Noto Sans JP", sans-serif;
-  background-color: #cdcfc0;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap; /* 折り返しを許可 */
-  min-height: 100vh;
-  padding: 40px 5%;
-  position: relative;
-  gap: 40px;
-  justify-content: center;
-  align-items: center;
-}
-
-.left-section {
-  flex: 1 1 50%; /* 基本は幅50% */
-  text-align: center;
-}
-
-.left-section h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-  font-weight: 500;
-}
-
-.star {
-  font-size: 60px;
-  color: #ffd700;
-  margin: 20px 0;
-}
-
-.left-section img {
-  width: 100%;
-  max-width: 500px; /* 最大幅を設定 */
-  height: auto; /* 高さを自動調整 */
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-  display: block; /* 中央揃えのため */
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.right-section {
-  flex: 1 1 30%; /* 基本は幅30% */
-  display: flex; /* 中央揃えのため */
-  flex-direction: column; /* 中身を縦並びに */
-  justify-content: center;
-  align-items: center;
-  text-align: center; /* テキストも中央揃えに */
-}
-
-.menu {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 20px 0; /* 下に少しマージンを追加 */
-  width: 100%; /* 幅いっぱいを使う */
-}
-
-.menu li {
-  margin: 28px 0;
-}
-
-.menu a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 20px;
-  padding-bottom: 6px;
-  border-bottom: 1px solid #ffffff;
-  transition: all 0.3s ease;
-}
-
-.menu a:hover {
-  color: #ffd700;
-  border-color: #ffd700;
-}
-
-.flower {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  width: 190px;
-  height: auto;
-  opacity: 0.7;
-  z-index: -1; /* 他の要素の後ろになるように調整（必要に応じて） */
-  transform: rotate(-5deg);
-}
-
-.sub-page {
-  padding: 40px;
-  font-size: 18px;
-  background-color: #c6c2a6;
-  min-height: 100vh;
-}
-
-.sub-page h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.sub-page a {
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-  margin-top: 30px;
-}
-.sns-icons {
-  margin-top: 20px; /* メニューとの間隔調整 */
-  text-align: center;
-}
-
-.sns-icons a {
-  color: #ffffff;
-  font-size: 28px;
-  margin: 0 15px;
-  transition: color 0.3s ease;
-  border-bottom: none; /* メニューのaタグとは違うので線を消す */
-  text-decoration: none;
-}
-
-.sns-icons a:hover {
-  color: #ffd700;
-}
-
-footer {
-  margin-top: 30px; /* SNSアイコンとの間隔調整 */
-  text-align: center;
-  font-size: 14px;
-  color: #ffffff;
-  opacity: 0.7;
-  width: 100%; /* 幅いっぱいを使う */
-}
-
-/* ========== レスポンシブ対応 ========== */
-@media (max-width: 768px) { /* 画面幅が768px以下の場合に適用 */
-
+    background-color: #cdcfc0;
+  }
+  
   .container {
-    flex-direction: column; /* 要素を縦積みに変更 */
-    padding: 30px 5%; /* 上下のパディングを少し減らす */
-    gap: 20px; /* 要素間のギャップを狭める */
-    align-items: center; /* 要素を中央揃え */
+    display: flex;
+    flex-wrap: wrap; /* 要素が多い場合に折り返す */
+    min-height: 100vh; /* 画面の高さいっぱいに広げる */
+    padding: 40px 5%; /* 上下左右の余白 */
+    position: relative; /* .flower の絶対配置の基準点 */
+    gap: 40px; /* flexアイテム間の隙間 */
+    justify-content: center; /* 水平方向中央揃え */
+    align-items: center; /* 垂直方向中央揃え */
   }
-
-  .left-section,
-  .right-section {
-    flex-basis: 100%; /* 各セクションの幅を100%にする */
-    flex-grow: 0; /* 余計な伸びをなくす */
-    max-width: 100%; /* 最大幅も100%に */
-    margin-bottom: 20px; /* 各セクション間のマージン */
-  }
-
+  
+  /* 左側セクション */
   .left-section {
-      order: 1; /* 左セクションを先に表示 */
-      margin-bottom: 0; /* 画像とメニュー間のマージンは right-section で調整 */
+    flex: 1 1 50%; /* 横幅の比率と基本幅 */
+    text-align: center;
   }
-
+  
+  .left-section h1 {
+    font-size: 36px;
+    margin-top: 0; /* 上マージン調整 */
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .star {
+    font-size: 60px;
+    color: #ffd700;
+    margin: 20px 0;
+  }
+  
+  .left-section img {
+    width: 100%; /* 親要素に対して100% */
+    max-width: 500px; /* 最大幅は500px */
+    height: auto; /* 高さは自動調整 */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    display: block; /* インライン要素の隙間対策 */
+    margin-left: auto; /* 中央揃え */
+    margin-right: auto;
+  }
+  
+  /* 右側セクション */
   .right-section {
-      order: 2; /* 右セクションを後に表示 */
-      /* left-sectionの画像の下に来るように特別な指定は不要 */
-      /* .container の flex-direction: column により自然に下に配置される */
-      width: 100%; /* 幅を確実に100%に */
+    flex: 1 1 30%; /* 横幅の比率と基本幅 */
+    display: flex;
+    flex-direction: column; /* 中の要素を縦に並べる */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
-
-  .left
-
+  
+  /* ナビゲーションメニュー */
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0; /* 下に少しマージン */
+    width: 100%;
+  }
+  
+  .menu li {
+    margin: 28px 0; /* 各メニュー項目の間隔 */
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #ffffff;
+    transition: all 0.3s ease; /* ホバー時のアニメーション */
+  }
+  
+  .menu a:hover {
+    color: #ffd700; /* ホバー時の文字色 */
+    border-color: #ffd700; /* ホバー時の下線色 */
+  }
+  
+  /* SNSアイコン */
+  .sns-icons {
+    margin-top: 20px; /* メニューとの間隔 */
+    text-align: center;
+  }
+  
+  .sns-icons a {
+    color: #ffffff;
+    font-size: 28px;
+    margin: 0 15px; /* アイコン間の左右マージン */
+    transition: color 0.3s ease;
+    border-bottom: none; /* メニューのリンクと違い下線なし */
+    text-decoration: none;
+  }
+  
+  .sns-icons a:hover {
+    color: #ffd700;
+  }
+  
+  /* フッター */
+  footer {
+    margin-top: 30px; /* SNSアイコンとの間隔 */
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    opacity: 0.7;
+    width: 100%;
+  }
+  
+  /* 花のイラスト */
+  .flower {
+    position: absolute; /* .container を基準に絶対配置 */
+    right: 20px; /* 右からの位置 */
+    bottom: 20px; /* 下からの位置 */
+    width: 190px; /* 幅 */
+    height: auto;
+    opacity: 0.7;
+    z-index: -1; /* 他の要素の後ろ（背景に近い方）に配置 */
+    transform: rotate(-5deg); /* 少し回転 */
+  }
+  /* ==============================
+     レスポンシブ対応 (768px以下 / タブレット・スマホ)
+     ============================== */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* 縦積みに変更 */
+      padding: 30px 5%; /* 上下パディングを少し減らす */
+      gap: 20px; /* 要素間の隙間を狭める */
+      /* align-items: center; はデフォルトで stretch なので必要に応じて設定 */
+    }
+  
+    .left-section,
+    .right-section {
+      flex-basis: 100%; /* 各セクションの幅を100%に */
+      flex-grow: 0; /* 余計な伸びをなくす */
+      max-width: 100%;
+      margin-bottom: 20px; /* セクション間のマージン */
+    }
+  
+    .left-section {
+        order: 1; /* 表示順: 左セクションが先 */
+        margin-bottom: 0; /* 下のマージンをなくす（right-sectionで調整）*/
+    }
+  
+    .right-section {
+        order: 2; /* 表示順: 右セクションが後 */
+        width: 100%;
+        padding-bottom: 30px; /* 花のイラストとのスペース確保 */
+    }
+  
+    /* フォントサイズ等の調整 */
+    .left-section h1 {
+      font-size: 30px;
+    }
+    .star {
+      font-size: 50px;
+      margin: 15px 0;
+    }
+     .menu li {
+       margin: 20px 0;
+     }
+     .menu a {
+       font-size: 18px;
+     }
+    .sns-icons {
+      margin-top: 30px;
+    }
+    .sns-icons a {
+      font-size: 26px;
+      margin: 0 12px;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 12px;
+    }
+  
+    /* 花のイラストの調整 */
+    .flower {
+      width: 100px;    /* サイズを小さく */
+      right: 10px;     /* 右からの位置 */
+      bottom: 10px;    /* 下からの位置 */
+      opacity: 0.6;    /* 少し薄く */
+      z-index: -1;     /* 文字の後ろに隠れるように */
+    }
+  }
+  
