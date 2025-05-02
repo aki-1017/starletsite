@@ -82,4 +82,10 @@
   .access-map-container iframe {
     height: 300px;
   }
+
+  .page-container {
+
+    padding-top: 160px;
+  }
+
 }
